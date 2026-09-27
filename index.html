@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forge — goals with a finish line</title>
+<meta name="title-en" content="Forge — goals with a finish line">
+<meta name="title-ru" content="Forge — цели с финишной чертой">
+<meta name="description" content="Forge is a goal tracker with a deadline: build a habit or quit a bad one in a week, a month or a year.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="lang.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><img src="icon-512.png" alt="">Forge</a>
+  <div class="lang" role="group" aria-label="Language"><button data-set="ru" aria-pressed="false">RU</button><button data-set="en" aria-pressed="true">EN</button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <h1><span data-lang="en">Goals with a finish line.</span><span data-lang="ru">Цели с финишной чертой.</span></h1>
+    <p class="lead" data-lang="en">Set a goal for a week, a month or a year. Build a new habit or quit a bad one. Mark every day and see your honest progress.</p>
+    <p class="lead" data-lang="ru">Поставьте цель на неделю, месяц или год. Выработайте полезную привычку или откажитесь от вредной. Отмечайте каждый день и видьте честный прогресс.</p>
+    <span class="store" aria-disabled="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.15.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.67-.92 2.66.97.08 1.96-.49 2.56-1.21z"/></svg>
+      <span><small><span data-lang="en">Coming soon to the</span><span data-lang="ru">Скоро в</span></small>App Store</span>
+    </span>
+  </div>
+  <div class="cal" aria-hidden="true">
+    <h3><span data-lang="en">Goal progress</span><span data-lang="ru">Прогресс по цели</span></h3>
+    <strong><span data-lang="en">Workout 30 minutes</span><span data-lang="ru">Тренировка 30 минут</span></strong>
+    <div class="grid"><span class="wd"><b data-lang="en" style="font-weight:inherit">Mo</b><b data-lang="ru" style="font-weight:inherit">Пн</b></span><span class="wd"><b data-lang="en" style="font-weight:inherit">Tu</b><b data-lang="ru" style="font-weight:inherit">Вт</b></span><span class="wd"><b data-lang="en" style="font-weight:inherit">We</b><b data-lang="ru" style="font-weight:inherit">Ср</b></span><span class="wd"><b data-lang="en" style="font-weight:inherit">Th</b><b data-lang="ru" style="font-weight:inherit">Чт</b></span><span class="wd"><b data-lang="en" style="font-weight:inherit">Fr</b><b data-lang="ru" style="font-weight:inherit">Пт</b></span><span class="wd"><b data-lang="en" style="font-weight:inherit">Sa</b><b data-lang="ru" style="font-weight:inherit">Сб</b></span><span class="wd"><b data-lang="en" style="font-weight:inherit">Su</b><b data-lang="ru" style="font-weight:inherit">Вс</b></span><span class="empty"></span><span class="empty"></span><span class="ok">1</span><span class="ok">2</span><span class="ok">3</span><span class="ok">4</span><span class="ok">5</span><span class="part">6</span><span class="ok">7</span><span class="ok">8</span><span class="ok">9</span><span class="ok">10</span><span class="ok">11</span><span class="bad">12</span><span class="ok">13</span><span class="ok">14</span><span class="ok">15</span><span class="ok">16</span><span class="part">17</span><span class="ok">18</span><span class="ok">19</span><span class="fut">20</span><span class="fut">21</span><span class="fut">22</span><span class="fut">23</span><span class="fut">24</span><span class="fut">25</span><span class="fut">26</span><span class="fut">27</span><span class="fut">28</span><span class="fut">29</span><span class="fut">30</span></div>
+    <div class="bar"><i></i></div>
+    <div class="pct"><span data-lang="en">Completion</span><span data-lang="ru">Прогресс выполнения</span><b>83%</b></div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <div class="dots"><i style="background:#35B474"></i><i style="background:#EBB734"></i><i style="background:#E0564A"></i></div>
+    <h3 data-lang="en">A calendar for every goal</h3><h3 data-lang="ru">Календарь для каждой цели</h3>
+    <p data-lang="en">Mark each day as done, partly done or missed. Green, yellow and red show your month at a glance.</p>
+    <p data-lang="ru">Отмечайте каждый день: выполнено, частично или не выполнено. Зелёный, жёлтый и красный показывают весь месяц с одного взгляда.</p>
+  </div>
+  <div class="feature">
+    <div class="dots"><i style="background:#3557A6"></i><i style="background:#3557A6;opacity:.5"></i><i style="background:#3557A6;opacity:.25"></i></div>
+    <h3 data-lang="en">Honest progress</h3><h3 data-lang="ru">Честный прогресс</h3>
+    <p data-lang="en">See how much time has passed and how much of the goal is really done, including partial days and weekly targets.</p>
+    <p data-lang="ru">Видно, сколько времени прошло и сколько цели выполнено на самом деле, с учётом частичных дней и недельных норм.</p>
+  </div>
+  <div class="feature">
+    <div class="dots"><i style="background:#C9D0DA"></i><i style="background:#FFC928"></i><i style="background:#2F96E8"></i></div>
+    <h3 data-lang="en">Awards up to the Phoenix</h3><h3 data-lang="ru">Награды вплоть до Феникса</h3>
+    <p data-lang="en">Every completed goal brings you closer to silver and gold stars, diamonds, crowns and the mythical Phoenix.</p>
+    <p data-lang="ru">Каждая выполненная цель приближает к серебряным и золотым звёздам, бриллиантам, коронам и мифическому Фениксу.</p>
+  </div>
+  <div class="feature">
+    <div class="dots"><i style="background:#1C2740"></i><i style="background:#1C2740"></i><i style="background:#3ECF8E"></i></div>
+    <h3 data-lang="en">Private by design</h3><h3 data-lang="ru">Данные остаются у вас</h3>
+    <p data-lang="en">No sign-up required. Your goals stay on your phone, protected by a passcode and Face ID. No ads, no tracking.</p>
+    <p data-lang="ru">Регистрация не нужна. Цели хранятся на вашем телефоне под защитой кода и Face ID. Без рекламы и слежки.</p>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <h2 class="section-title"><span data-lang="en">Free forever. No ads.</span><span data-lang="ru">Бесплатно навсегда. Без рекламы.</span></h2>
+  <p class="intro" data-lang="en">The free version lets you work on up to three goals at the same time, and that’s enough for most people. Focusing on a few things is the surest way to get them done. Finished goals don’t count toward the limit.</p>
+  <p class="intro" data-lang="ru">В бесплатной версии можно вести до трёх целей одновременно, и большинству этого хватает. Сосредоточиться на немногом — самый верный способ довести дело до конца. Завершённые цели в лимит не входят.</p>
+  <div class="plans">
+    <div class="plan free">
+      <span class="tag"><span data-lang="en">Free forever</span><span data-lang="ru">Бесплатно навсегда</span></span>
+      <h3>Forge</h3>
+      <ul>
+        <li><span data-lang="en">Up to 3 active goals at a time</span><span data-lang="ru">До 3 активных целей одновременно</span></li>
+        <li><span data-lang="en">Calendar, progress and statistics</span><span data-lang="ru">Календарь, прогресс и статистика</span></li>
+        <li><span data-lang="en">All awards, up to the Phoenix</span><span data-lang="ru">Все награды, вплоть до Феникса</span></li>
+        <li><span data-lang="en">Passcode, Face ID, export and import</span><span data-lang="ru">Код, Face ID, экспорт и импорт</span></li>
+        <li><span data-lang="en">No ads, ever</span><span data-lang="ru">Никакой рекламы</span></li>
+      </ul>
+    </div>
+    <div class="plan pro">
+      <span class="tag">Pro</span>
+      <h3>Forge Pro</h3>
+      <p class="price"><span data-lang="en">Monthly, yearly or a one-time lifetime purchase</span><span data-lang="ru">На месяц, на год или навсегда одной покупкой</span></p>
+      <ul>
+        <li><span data-lang="en">Everything in the free version</span><span data-lang="ru">Всё, что есть в бесплатной версии</span></li>
+        <li><span data-lang="en">Unlimited active goals</span><span data-lang="ru">Неограниченное число активных целей</span></li>
+        <li><span data-lang="en">Support for independent development</span><span data-lang="ru">Поддержка независимой разработки</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="support" id="support">
+  <h2 class="section-title"><span data-lang="en">Support</span><span data-lang="ru">Поддержка</span></h2>
+  <p data-lang="en">Questions, ideas or something not working? Write to us from the app (Settings → Feedback) or by email:</p>
+  <p data-lang="ru">Есть вопрос, идея или что-то не работает? Напишите нам из приложения («Настройки» → «Обратная связь») или на почту:</p>
+  <p><a href="mailto:bezzubcev@gmail.com">bezzubcev@gmail.com</a></p>
+</section>
+</main>
+</div>
+<footer><div class="wrap">
+  <span><span data-lang="en">© 2026 Dmitrii Bezzubtsev</span><span data-lang="ru">© 2026 Дмитрий Беззубцев</span></span>
+  <nav>
+    <a href="index.html#support"><span data-lang="en">Support</span><span data-lang="ru">Поддержка</span></a>
+    <a href="privacy.html"><span data-lang="en">Privacy Policy</span><span data-lang="ru">Политика конфиденциальности</span></a>
+    <a href="terms.html"><span data-lang="en">Terms of Use</span><span data-lang="ru">Условия использования</span></a>
+  </nav>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+:root{
+  --bg:#EEF0F3;--surface:#FFFFFF;--ink:#18202B;--ink2:#5D6776;--line:#D6DBE2;
+  --steel:#1C2740;--steel2:#2E3C5E;--green:#3ECF8E;--green-ink:#1F7A52;--accent:#3557A6;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#11151B;--surface:#1B2129;--ink:#E8ECF1;--ink2:#97A1AE;--line:#2B333E;--accent:#7D98E2;--green-ink:#3ECF8E;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+img{max-width:100%}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+html[lang=en] [data-lang=ru],html[lang=ru] [data-lang=en]{display:none!important}
+
+header.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:20px;letter-spacing:-.02em}
+.brand img{width:34px;height:34px;border-radius:8px}
+.lang{display:flex;background:var(--line);border-radius:10px;padding:3px}
+.lang button{border:0;background:none;font:inherit;font-size:14px;font-weight:600;color:var(--ink2);padding:5px 11px;border-radius:8px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--surface);color:var(--ink)}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:40px 0 64px}
+.hero h1{font-size:clamp(40px,7vw,64px);line-height:1.02;letter-spacing:-.035em;margin:0 0 18px;font-weight:800}
+.hero p.lead{font-size:20px;color:var(--ink2);margin:0 0 28px;max-width:30em}
+.store{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:14px;padding:12px 20px;font-weight:700}
+.store small{display:block;font-weight:500;font-size:12px;opacity:.75;line-height:1.1}
+.note{font-size:14px;color:var(--ink2);margin-top:12px}
+
+/* мини-календарь как в приложении */
+.cal{background:var(--steel);border-radius:32px;padding:26px;color:#E8ECF1;box-shadow:0 30px 60px -30px rgba(28,39,64,.55)}
+.cal h3{margin:0 0 4px;font-size:15px;font-weight:500;color:#97A1AE}
+.cal strong{display:block;font-size:22px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.grid span{aspect-ratio:1;border-radius:9px;background:var(--steel2);display:flex;align-items:center;justify-content:center;font-size:13px;font-variant-numeric:tabular-nums}
+.grid .wd{background:none;color:#97A1AE;font-size:11px;aspect-ratio:auto;padding-bottom:2px}
+.grid .ok{background:#35B474;color:#fff}.grid .part{background:#EBB734;color:#2A1E00}.grid .bad{background:#E0564A;color:#fff}.grid .fut{background:none;box-shadow:inset 0 0 0 1.5px var(--steel2);color:#6B7583}
+.grid .empty{background:none}
+.bar{height:8px;border-radius:4px;background:var(--steel2);margin-top:18px;overflow:hidden}.bar i{display:block;height:100%;width:83%;background:#35B474;border-radius:4px}
+.pct{display:flex;justify-content:space-between;font-size:14px;color:#97A1AE;margin-top:8px}.pct b{color:#fff;font-size:18px}
+
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding-bottom:64px}
+.feature{background:var(--surface);border-radius:22px;padding:24px}
+.feature h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
+.feature p{margin:0;color:var(--ink2);font-size:16px}
+.dots{display:flex;gap:6px;margin-bottom:14px}.dots i{width:14px;height:14px;border-radius:4px;display:block}
+
+.section-title{font-size:30px;letter-spacing:-.02em;margin:0 0 16px}
+.support{background:var(--surface);border-radius:22px;padding:28px;margin-bottom:64px}
+.support p{margin:0 0 8px;color:var(--ink2)}
+
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--ink2);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
+footer nav{display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:var(--ink2)}
+
+/* документы */
+.doc{background:var(--surface);border-radius:24px;padding:clamp(22px,5vw,48px);margin:10px 0 48px}
+.doc h1{font-size:clamp(26px,7vw,40px);overflow-wrap:break-word;hyphens:auto;letter-spacing:-.025em;line-height:1.1;margin:0 0 8px}
+.doc .date{color:var(--ink2);font-size:15px;margin:0 0 28px}
+.doc h2{font-size:21px;margin:32px 0 8px;letter-spacing:-.01em}
+.doc p,.doc li{color:var(--ink);max-width:44em}
+.doc ul{padding-left:1.2em}
+.doc li{margin:4px 0}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:16px;gap:32px}
+  .features{grid-template-columns:1fr}
+}
+
+/* тарифы */
+.pricing{padding-bottom:64px}
+.pricing .intro{color:var(--ink2);margin:0 0 20px;max-width:40em;font-size:18px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.plan{background:var(--surface);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:14px}
+.plan.free{box-shadow:inset 0 0 0 2px var(--green)}
+.plan .tag{align-self:flex-start;font-size:13px;font-weight:700;border-radius:10px;padding:4px 10px;background:var(--green);color:#0E2A1C}
+.plan.pro .tag{background:var(--steel);color:#fff}
+.plan h3{margin:0;font-size:26px;letter-spacing:-.02em}
+.plan .price{font-size:17px;color:var(--ink2);margin:-8px 0 0}
+.plan ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.plan li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.plan li::before{content:"";flex:none;width:20px;height:20px;margin-top:2px;border-radius:6px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%230E2A1C' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.plan.pro li::before{background-color:var(--steel);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){.plan.pro .tag,.plan.pro li::before{background-color:#3A4A70}}
+@media (max-width:760px){.plans{grid-template-columns:1fr}}
